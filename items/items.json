@@ -1,0 +1,149 @@
+﻿[
+  // Acrobat Cube
+  {
+    "name": "Acrobat Cube",
+    "type": "toggle",
+    "img": "images/AcrobatCubeCharlotte.png",
+    "codes": "acrobat"
+  },
+  // Stone of Flight
+  {
+    "name": "Stone of Flight",
+    "type": "toggle",
+    "img": "images/StoneOfFlight.png",
+    "codes": "stoneflight"
+  },
+  // Griffon Wing
+  {
+    "name": "Griffon Wing",
+    "type": "toggle",
+    "img": "images/GriffonWing.png",
+    "codes": "griffon"
+  },
+  // Change Cube
+  {
+    "name": "Change Cube",
+    "type": "toggle",
+    "img": "images/ChangeCube.png",
+    "codes": "change"
+  },
+  // Push Cube
+  {
+    "name": "Push Cube",
+    "type": "toggle",
+    "img": "images/PushCube.png",
+    "codes": "push"
+  },
+  // Strength Glove
+  {
+    "name": "Strength Glove",
+    "type": "toggle",
+    "img": "images/StrengthGlove.png",
+    "codes": "strength"
+  },
+  // Toad Morph
+  {
+    "name": "Toad Morph",
+    "type": "toggle",
+    "img": "images/ToadMorph.png",
+    "codes": "toad"
+  },
+  // Owl Morph
+  {
+    "name": "Owl Morph",
+    "type": "toggle",
+    "img": "images/OwlMorph.png",
+    "codes": "owl"
+  },
+  // Sanctuary
+  {
+    "name": "Sanctuary",
+    "type": "toggle",
+    "img": "images/Sanctuary.png",
+    "codes": "sanctuary"
+  },
+  // Speed Up
+  {
+    "name": "Speed Up",
+    "type": "toggle",
+    "img": "images/SpeedUp.png",
+    "codes": "speed"
+  },
+  // Puppet Master
+  {
+    "name": "Puppet Master",
+    "type": "toggle",
+    "img": "images/Puppet.png",
+    "codes": "puppet"
+  },
+  // Cog
+  {
+    "name": "Cog",
+    "type": "toggle",
+    "img": "images/Cog.png",
+    "codes": "cog"
+  },
+  // City of Haze
+  {
+    "name": "City of Haze",
+    "type": "toggle",
+    "img": "images/CityOfHaze.png",
+    "codes": "cityofhaze"
+  },
+  // Sandy Grave
+  {
+    "name": "Sandy Grave",
+    "type": "toggle",
+    "img": "images/SandyGrave.png",
+    "codes": "sandygrave"
+  },
+  // Nation of Fools
+  {
+    "name": "Nation of Fools",
+    "type": "toggle",
+    "img": "images/NationOfFools.png",
+    "codes": "nationoffools"
+  },
+  // Forest of Doom
+  {
+    "name": "Forest of Doom",
+    "type": "toggle",
+    "img": "images/ForestOfDoom.png",
+    "codes": "forestofdoom"
+  },
+  // Forgotten City
+  {
+    "name": "Forgotten City",
+    "type": "toggle",
+    "img": "images/ForgottenCity.png",
+    "codes": "forgottencity"
+  },
+  // 13th Street
+  {
+    "name": "13th Street",
+    "type": "toggle",
+    "img": "images/13thStreet.png",
+    "codes": "13thstreet"
+  },
+  // Burnt Paradise
+  {
+    "name": "Burnt Paradise",
+    "type": "toggle",
+    "img": "images/BurntParadise.png",
+    "codes": "burntparadise"
+  },
+  // Dark Academy
+  {
+    "name": "Dark Academy",
+    "type": "toggle",
+    "img": "images/DarkAcademy.png",
+    "codes": "darkacademy"
+  },
+  // Nest of Evil
+  {
+    "name": "Nest of Evil",
+    "type": "toggle",
+    "img": "images/NestOfEvil.png",
+    "codes": "nestofEvil"
+  }
+]

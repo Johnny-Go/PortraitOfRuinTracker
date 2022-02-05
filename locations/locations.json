@@ -2327,8 +2327,338 @@
   {
     "name": "Burnt Paradise",
     "color": "#",
-    "access_rules": ["burntparadise"],
-    "children": []
+    //every item in burnt paradise requires at least puppet
+    "access_rules": [
+      "burntparadise, change, [height]",
+      "burntparadise, height"
+    ],
+    "children": [
+      //can access as long as you have any height item
+      {
+        "name": "Spoiled Milk",
+        "sections": [
+          {
+            "name": "Spoiled Milk",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "burntparadisemap",
+            "size": 25,
+            "x": 457,
+            "y": 170
+          }
+        ]
+      },
+      {
+        "name": "Great Axe",
+        "sections": [
+          {
+            "name": "Great Axe",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "burntparadisemap",
+            "size": 25,
+            "x": 509,
+            "y": 170
+          }
+        ]
+      },
+      {
+        "name": "HP Max Up",
+        "sections": [
+          {
+            "name": "HP Max Up",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "burntparadisemap",
+            "size": 25,
+            "x": 586,
+            "y": 352
+          }
+        ]
+      },
+      {
+        "name": "Cure Poison",
+        "sections": [
+          {
+            "name": "Cure Poison",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "burntparadisemap",
+            "size": 25,
+            "x": 171,
+            "y": 93
+          }
+        ]
+      },
+      {
+        "name": "Bakatwa",
+        "sections": [
+          {
+            "name": "Bakatwa",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "burntparadisemap",
+            "size": 25,
+            "x": 171,
+            "y": 145
+          }
+        ]
+      },
+      {
+        "name": "Gold Leggings",
+        "sections": [
+          {
+            "name": "Gold Leggings",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "burntparadisemap",
+            "size": 25,
+            "x": 145,
+            "y": 171
+          }
+        ]
+      },
+      {
+        "name": "Artemis Shoes",
+        "sections": [
+          {
+            "name": "Artemis Shoes",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "burntparadisemap",
+            "size": 25,
+            "x": 118,
+            "y": 171
+          }
+        ]
+      },
+      {
+        "name": "HP Max Up",
+        "sections": [
+          {
+            "name": "HP Max Up",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "burntparadisemap",
+            "size": 25,
+            "x": 67,
+            "y": 352
+          }
+        ]
+      },
+      //everything else requires very high
+      {
+        "access_rules": ["veryhigh"],
+        "children": [
+          {
+            "name": "MP Max Up",
+            "sections": [
+              {
+                "name": "MP Max Up",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "burntparadisemap",
+                "size": 25,
+                "x": 15,
+                "y": 249
+              }
+            ]
+          },
+          {
+            "name": "Ice Cream",
+            "sections": [
+              {
+                "name": "Ice Cream",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "burntparadisemap",
+                "size": 25,
+                "x": 93,
+                "y": 404
+              }
+            ]
+          },
+          {
+            "name": "Engagement Ring",
+            "sections": [
+              {
+                "name": "Engagement Ring",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "burntparadisemap",
+                "size": 25,
+                "x": 171,
+                "y": 456
+              }
+            ]
+          },
+          {
+            "name": "MP Max Up",
+            "sections": [
+              {
+                "name": "MP Max Up",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "burntparadisemap",
+                "size": 25,
+                "x": 639,
+                "y": 249
+              }
+            ]
+          },
+          {
+            "name": "Financier",
+            "sections": [
+              {
+                "name": "Financier",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "burntparadisemap",
+                "size": 25,
+                "x": 561,
+                "y": 430
+              }
+            ]
+          },
+          {
+            "name": "Tome of Arms 3",
+            "sections": [
+              {
+                "name": "Tome of Arms 3",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "burntparadisemap",
+                "size": 25,
+                "x": 457,
+                "y": 404
+              }
+            ]
+          },
+          {
+            "name": "Secret Truffle",
+            "sections": [
+              {
+                "name": "Secret Truffle",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "burntparadisemap",
+                "size": 25,
+                "x": 379,
+                "y": 534
+              }
+            ]
+          },
+          {
+            "name": "Jet Black Whip",
+            "sections": [
+              {
+                "name": "Jet Black Whip",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "burntparadisemap",
+                "size": 25,
+                "x": 249,
+                "y": 561
+              }
+            ]
+          },
+          //need smallbody to get
+          {
+            "name": "Super Tonic",
+            "sections": [
+              {
+                "name": "Super Tonic",
+                "access_rules": ["{}", "smallbody"],
+                "item_count": 1,
+                "capture_item": true
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "burntparadisemap",
+                "size": 25,
+                "x": 223,
+                "y": 535
+              }
+            ]
+          }
+        ]
+      },
+      //can see as long as you have height, requires at least doublejump+puppet
+      {
+        "name": "Tinned Spinach",
+        "sections": [
+          {
+            "name": "Tinned Spinach",
+            "access_rules": [
+              "{}",
+              "doublejump, change, [veryhigh]",
+              "veryhigh",
+              "change, doublejump, [puppet]",
+              "doublejump, puppet"
+            ],
+            "item_count": 1,
+            "capture_item": true
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "burntparadisemap",
+            "size": 25,
+            "x": 483,
+            "y": 93
+          }
+        ]
+      }
+    ]
   },
   //13th Street
   {

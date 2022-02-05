@@ -1,0 +1,216 @@
+{
+  "tracker_default": {
+    "type": "container",
+    "background": "#2b2b2b",
+    "content": {
+      "type": "dock",
+      "dropshadow": true,
+      "content": [
+        {
+          "type": "dock",
+          "dock": "left",
+          "v_alignment": "stretch",
+          "content": [
+            {
+              "type": "group",
+              "header": "Items",
+              "dock": "top",
+              "content": {
+                "type": "layout",
+                "key": "shared_item_grid"
+              }
+            },
+            {
+              "type": "group",
+              "header": "Pinned Locations",
+              "content": {
+                "type": "recentpins",
+                "style": "wrap",
+                "h_alignment": "stretch",
+                "v_alignment": "stretch",
+                "orientation": "vertical",
+                "compact": true
+              }
+            }
+          ]
+        },
+        {
+          "type": "tabbed",
+          "tabs": [
+            {
+              "title": "Castle",
+              "content": {
+                "type": "map",
+                "maps": ["castlemap"]
+              }
+            },
+            {
+              "title": "City of Haze",
+              "content": {
+                "type": "map",
+                "maps": ["cityofhazemap"]
+              }
+            },
+            {
+              "title": "Sandy Grave",
+              "content": {
+                "type": "map",
+                "maps": ["sandygravemap"]
+              }
+            },
+            {
+              "title": "Nation of Fools",
+              "content": {
+                "type": "map",
+                "maps": ["nationoffoolsmap"]
+              }
+            },
+            {
+              "title": "Forest of Doom",
+              "content": {
+                "type": "map",
+                "maps": ["forestofdoommap"]
+              }
+            },
+            {
+              "title": "Dark Academy",
+              "content": {
+                "type": "map",
+                "maps": ["darkacademymap"]
+              }
+            },
+            {
+              "title": "Forgotten City",
+              "content": {
+                "type": "map",
+                "maps": ["forgottencitymap"]
+              }
+            },
+            {
+              "title": "Burnt Paradise",
+              "content": {
+                "type": "map",
+                "maps": ["burntparadisemap"]
+              }
+            },
+            {
+              "title": "13th Street",
+              "content": {
+                "type": "map",
+                "maps": ["13thstreetmap"]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "tracker_horizontal": {
+    "type": "container",
+    "background": "#2b2b2b",
+    "content": {
+      "type": "dock",
+      "dropshadow": true,
+      "content": [
+        {
+          "type": "dock",
+          "dock": "bottom",
+          "content": [
+            {
+              "type": "group",
+              "header": "Items",
+              "dock": "left",
+              "margin": "0,0,3,0",
+              "content": {
+                "type": "layout",
+                "h_alignment": "center",
+                "v_alignment": "center",
+                "key": "shared_item_grid"
+              }
+            },
+            {
+              "type": "group",
+              "header": "Pinned Locations",
+              "content": {
+                "type": "recentpins",
+                "style": "wrap",
+                "h_alignment": "stretch",
+                "v_alignment": "stretch",
+                "orientation": "horizontal",
+                "compact": true
+              }
+            }
+          ]
+        },
+        {
+          "type": "tabbed",
+          "tabs": [
+            {
+              "title": "Dracula's Castle",
+              "content": {
+                "type": "map",
+                "maps": ["castlemap"]
+              }
+            },
+            {
+              "title": "City of Haze",
+              "content": {
+                "type": "map",
+                "maps": ["cityofhazemap"]
+              }
+            },
+            {
+              "title": "Sandy Grave",
+              "content": {
+                "type": "map",
+                "maps": ["sandygravemap"]
+              }
+            },
+            {
+              "title": "Nation of Fools",
+              "content": {
+                "type": "map",
+                "maps": ["nationoffoolsmap"]
+              }
+            },
+            {
+              "title": "Forest of Doom",
+              "content": {
+                "type": "map",
+                "maps": ["forestofdoommap"]
+              }
+            },
+            {
+              "title": "Dark Academy",
+              "content": {
+                "type": "map",
+                "maps": ["darkacademymap"]
+              }
+            },
+            {
+              "title": "Forgotten City",
+              "content": {
+                "type": "map",
+                "maps": ["forgottencitymap"]
+              }
+            },
+            {
+              "title": "Burnt Paradise",
+              "content": {
+                "type": "map",
+                "maps": ["burntparadisemap"]
+              }
+            },
+            {
+              "title": "13th Street",
+              "content": {
+                "type": "map",
+                "maps": ["13thstreetmap"]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

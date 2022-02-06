@@ -6,6 +6,36 @@
     "img": "images/CastleMap.png"
   },
   {
+    "name": "castleentrancemap",
+    "location_size": 40,
+    "location_border_thickness": 5,
+    "img": "images/CastleEntrance.png"
+  },
+  {
+    "name": "buriedchambermap",
+    "location_size": 40,
+    "location_border_thickness": 5,
+    "img": "images/BuriedChamber.png"
+  },
+  {
+    "name": "greatstairwaymap",
+    "location_size": 40,
+    "location_border_thickness": 5,
+    "img": "images/GreatStairway.png"
+  },
+  {
+    "name": "towerofdeathmap",
+    "location_size": 40,
+    "location_border_thickness": 5,
+    "img": "images/TowerOfDeath.png"
+  },
+  {
+    "name": "masterskeepmap",
+    "location_size": 40,
+    "location_border_thickness": 5,
+    "img": "images/MastersKeep&ThroneRoom.png"
+  },
+  {
     "name": "cityofhazemap",
     "location_size": 40,
     "location_border_thickness": 5,

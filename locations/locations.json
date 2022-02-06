@@ -282,9 +282,10 @@
             "name": "Upper Castle Entrance",
             //via Buried Chamber -> Great Stairway
             "access_rules": [
-              "actrobat, puppet",
+              "acrobat, puppet",
               "doublejump",
-              "change, [jump]"
+              "change, [acrobat, puppet]",
+              "change, [doublejump]"
             ],
             "children": [
               {
@@ -367,7 +368,7 @@
               }
             ]
           },
-          //requires veryhigh, or jump+doublejump+puppet
+          //requires veryhigh, or acrobat+doublejump+puppet
           {
             "access_rules": [
               "veryhigh",
@@ -621,9 +622,10 @@
           //double jump or acrobat+puppet required
           {
             "access_rules": [
-              "actrobat, puppet",
+              "acrobat, puppet",
               "doublejump",
-              "change, [jump]"
+              "change, [acrobat, puppet]",
+              "change, [doublejump]"
             ],
             "children": [
               {
@@ -689,7 +691,7 @@
                   {
                     "map": "castlemap",
                     "size": 25,
-                    "x": 1212,
+                    "x": 1211,
                     "y": 691
                   }
                 ]
@@ -848,7 +850,7 @@
                   {
                     "map": "castlemap",
                     "size": 25,
-                    "x": 900,
+                    "x": 899,
                     "y": 561
                   }
                 ]
@@ -1074,22 +1076,484 @@
       //Tower of Death
       {
         "access_rules": [
-          "push, strength, actrobat, puppet",
+          //access from, the right
           "push, strength, doublejump",
-          "smallbody, actrobat, puppet",
+          "change, push, strength, [doublejump]",
+          //access from the left
+          "acrobat, puppet",
           "smallbody, doublejump",
-          "change, smallbody, [jump]"
+          "change, puppet, [acrobat]",
+          "change, smallbody, [doublejump]"
         ],
         "children": [
           //no additional items required
           {
-            "access_rules": [],
-            "children": []
+            "children": [
+              {
+                "name": "Halberd",
+                "sections": [
+                  {
+                    "name": "Halberd",
+                    "item_count": 1
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "castlemap",
+                    "size": 25,
+                    "x": 899,
+                    "y": 379
+                  }
+                ]
+              },
+              {
+                "name": "Taunt",
+                "sections": [
+                  {
+                    "name": "Taunt",
+                    "item_count": 1
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "castlemap",
+                    "size": 25,
+                    "x": 873,
+                    "y": 223
+                  }
+                ]
+              },
+              {
+                "name": "Forest of Doom Portrait",
+                "sections": [
+                  {
+                    "name": "Forest of Doom Portrait",
+                    "item_count": 1
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "castlemap",
+                    "size": 25,
+                    "x": 873,
+                    "y": 249
+                  }
+                ]
+              },
+              {
+                "name": "Viking Helmet Secret Room",
+                "sections": [
+                  {
+                    "name": "Viking Helmet",
+                    "item_count": 1
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "castlemap",
+                    "size": 25,
+                    "x": 873,
+                    "y": 353
+                  }
+                ]
+              },
+              {
+                "name": "Secret Tasty Meat",
+                "sections": [
+                  {
+                    "name": "Tasty Meat",
+                    "item_count": 1
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "castlemap",
+                    "size": 25,
+                    "x": 1264,
+                    "y": 509
+                  }
+                ]
+              },
+              {
+                "name": "Tempest",
+                "sections": [
+                  {
+                    "name": "Tempest",
+                    "item_count": 1
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "castlemap",
+                    "size": 25,
+                    "x": 1315,
+                    "y": 379
+                  }
+                ]
+              },
+              {
+                "name": "HP Max Up Secret Room",
+                "sections": [
+                  {
+                    "name": "HP Max Up Secret Room",
+                    "item_count": 1
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "castlemap",
+                    "size": 25,
+                    "x": 1264,
+                    "y": 353
+                  }
+                ]
+              }
+            ]
           },
-          //additonal items required
+          //cog needed
           {
-            "access_rules": [],
-            "children": []
+            "access_rules": ["cog"],
+            "children": [
+              {
+                "name": "Motorcycle Secret Room",
+                "access_rules": [
+                  "change, [doublejump, puppet]",
+                  "change, [acrobat, doublejump]",
+                  "doublejump, puppet",
+                  "acrobat, doublejump",
+                  "veryhigh"
+                ],
+                "sections": [
+                  {
+                    "name": "Slick Boots",
+                    "item_count": 1
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "castlemap",
+                    "size": 25,
+                    "x": 1081,
+                    "y": 431
+                  }
+                ]
+              }
+            ]
+          },
+          //veryhigh or smallbody needed
+          {
+            "access_rules": ["veryhigh", "smallbody"],
+            "children": [
+              {
+                "name": "Thunderbolt",
+                "sections": [
+                  {
+                    "name": "Thunderbolt",
+                    "item_count": 1
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "castlemap",
+                    "size": 25,
+                    "x": 1315,
+                    "y": 300
+                  }
+                ]
+              },
+              {
+                "name": "HP Max Up",
+                "sections": [
+                  {
+                    "name": "HP Max Up",
+                    "item_count": 1
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "castlemap",
+                    "size": 25,
+                    "x": 1290,
+                    "y": 300
+                  }
+                ]
+              },
+              {
+                "name": "Secret MP Max Up",
+                "sections": [
+                  {
+                    "name": "MP Max Up",
+                    "item_count": 1
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "castlemap",
+                    "size": 25,
+                    "x": 1264,
+                    "y": 326
+                  }
+                ]
+              },
+              {
+                "name": "Rose Stem Whip",
+                "sections": [
+                  {
+                    "name": "Rose Stem Whip",
+                    "item_count": 1
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "castlemap",
+                    "size": 25,
+                    "x": 1290,
+                    "y": 223
+                  }
+                ]
+              },
+              {
+                "name": "Blue Cape",
+                "sections": [
+                  {
+                    "name": "Blue Cape",
+                    "item_count": 1
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "castlemap",
+                    "size": 25,
+                    "x": 1264,
+                    "y": 119
+                  }
+                ]
+              },
+              {
+                "name": "INT Boost",
+                "sections": [
+                  {
+                    "name": "INT Boost",
+                    "item_count": 1
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "castlemap",
+                    "size": 25,
+                    "x": 1211,
+                    "y": 92
+                  }
+                ]
+              },
+              {
+                "name": "Open Veil",
+                "sections": [
+                  {
+                    "name": "Open Veil",
+                    "item_count": 1
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "castlemap",
+                    "size": 25,
+                    "x": 1237,
+                    "y": 274
+                  }
+                ]
+              },
+              {
+                "name": "Combat Beret",
+                "sections": [
+                  {
+                    "name": "Combat Beret",
+                    "item_count": 1
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "castlemap",
+                    "size": 25,
+                    "x": 1237,
+                    "y": 119
+                  }
+                ]
+              }
+            ]
+          },
+          //veryhigh needed
+          {
+            "children": [
+              {
+                "name": "Aura Blast",
+                "sections": [
+                  {
+                    "name": "Aura Blast",
+                    "access_rules": ["{}", "veryhigh"],
+                    "item_count": 1,
+                    "capture_item": true
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "castlemap",
+                    "size": 25,
+                    "x": 1237,
+                    "y": 300
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      //Master's Keep
+      {
+        "access_rules": [
+          "acrobat, puppet",
+          "push, strength, doublejump, smallbody",
+          "veryhigh, smallbody",
+          "change, puppet, [acrobat]",
+          "change, smallbody, [doublejump]"
+        ],
+        "children": [
+          //no additional items required
+          {
+            "children": [
+              {
+                "name": "HP Max Up",
+                "sections": [
+                  {
+                    "name": "HP Max Up",
+                    "item_count": 1
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "castlemap",
+                    "size": 25,
+                    "x": 1159,
+                    "y": 326
+                  }
+                ]
+              },
+              {
+                "name": "MP Max Up Secret Room",
+                "sections": [
+                  {
+                    "name": "MP Max Up",
+                    "item_count": 1
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "castlemap",
+                    "size": 25,
+                    "x": 977,
+                    "y": 171
+                  }
+                ]
+              },
+              {
+                "name": "Piercing Beam",
+                "sections": [
+                  {
+                    "name": "Piercing Beam",
+                    "item_count": 1
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "castlemap",
+                    "size": 25,
+                    "x": 1133,
+                    "y": 223
+                  }
+                ]
+              },
+              {
+                "name": "HP Max Up",
+                "sections": [
+                  {
+                    "name": "HP Max Up",
+                    "item_count": 1
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "castlemap",
+                    "size": 25,
+                    "x": 1055,
+                    "y": 92
+                  }
+                ]
+              }
+            ]
+          },
+          //visible, veryhigh required
+          {
+            "name": "MP Max Up",
+            "sections": [
+              {
+                "name": "MP Max Up",
+                "access_rules": [
+                  "{}",
+                  "veryhigh",
+                  "change, doublejump, [veryhigh]"
+                ],
+                "item_count": 1,
+                "capture_item": true
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "castlemap",
+                "size": 25,
+                "x": 1055,
+                "y": 14
+              }
+            ]
+          },
+          //veryhigh required
+          {
+            "access_rules": ["veryhigh", "change, doublejump, [veryhigh]"],
+            "children": [
+              {
+                "name": "Secret Foie Gras",
+                "sections": [
+                  {
+                    "name": "Foie Gras",
+                    "item_count": 1
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "castlemap",
+                    "size": 25,
+                    "x": 1081,
+                    "y": 14
+                  }
+                ]
+              },
+              {
+                "name": "Throne Room 'Secret'",
+                "sections": [
+                  {
+                    "name": "Two Items",
+                    "item_count": 2
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "castlemap",
+                    "size": 25,
+                    "x": 1003,
+                    "y": 14
+                  }
+                ]
+              }
+            ]
           }
         ]
       }

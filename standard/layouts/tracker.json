@@ -1,0 +1,374 @@
+{
+  "tracker_default": {
+    "type": "container",
+    "background": "#2b2b2b",
+    "content": {
+      "type": "dock",
+      "dropshadow": true,
+      "content": [
+        {
+          "type": "dock",
+          "dock": "left",
+          "v_alignment": "stretch",
+          "content": [
+            {
+              "type": "group",
+              "header": "Items",
+              "dock": "top",
+              "content": {
+                "type": "layout",
+                "key": "shared_item_grid"
+              }
+            },
+            {
+              "type": "group",
+              "header": "Pinned Locations",
+              "content": {
+                "type": "recentpins",
+                "style": "wrap",
+                "h_alignment": "stretch",
+                "v_alignment": "stretch",
+                "orientation": "vertical",
+                "compact": true
+              }
+            }
+          ]
+        },
+        {
+          "type": "tabbed",
+          "tabs": [
+            {
+              "title": "Castle Maps",
+              "content": {
+                "type": "tabbed",
+                "tabs": [
+                  {
+                    "title": "Dracula's Castle",
+                    "content": {
+                      "type": "map",
+                      "v_alignment": "center",
+                      "h_alignment": "center",
+                      "maps": ["castlemap"]
+                    }
+                  },
+                  {
+                    "title": "Castle Entrance",
+                    "content": {
+                      "type": "map",
+                      "v_alignment": "center",
+                      "h_alignment": "center",
+                      "maps": ["castleentrancemap"]
+                    }
+                  },
+                  {
+                    "title": "Buried Chamber",
+                    "content": {
+                      "type": "map",
+                      "v_alignment": "center",
+                      "h_alignment": "center",
+                      "maps": ["buriedchambermap"]
+                    }
+                  },
+                  {
+                    "title": "Great Stairway",
+                    "content": {
+                      "type": "map",
+                      "v_alignment": "center",
+                      "h_alignment": "center",
+                      "maps": ["greatstairwaymap"]
+                    }
+                  },
+                  {
+                    "title": "Tower Of Death",
+                    "content": {
+                      "type": "map",
+                      "v_alignment": "center",
+                      "h_alignment": "center",
+                      "maps": ["towerofdeathmap"]
+                    }
+                  },
+                  {
+                    "title": "Master's Keep",
+                    "content": {
+                      "type": "map",
+                      "v_alignment": "center",
+                      "h_alignment": "center",
+                      "maps": ["masterskeepmap"]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "title": "Portrait Maps",
+              "content": {
+                "type": "tabbed",
+                "tabs": [
+                  {
+                    "title": "City of Haze",
+                    "content": {
+                      "type": "map",
+                      "v_alignment": "center",
+                      "h_alignment": "center",
+                      "maps": ["cityofhazemap"]
+                    }
+                  },
+                  {
+                    "title": "Sandy Grave",
+                    "content": {
+                      "type": "map",
+                      "v_alignment": "center",
+                      "h_alignment": "center",
+                      "maps": ["sandygravemap"]
+                    }
+                  },
+                  {
+                    "title": "Nation of Fools",
+                    "content": {
+                      "type": "map",
+                      "v_alignment": "center",
+                      "h_alignment": "center",
+                      "maps": ["nationoffoolsmap"]
+                    }
+                  },
+                  {
+                    "title": "Forest of Doom",
+                    "content": {
+                      "type": "map",
+                      "v_alignment": "center",
+                      "h_alignment": "center",
+                      "maps": ["forestofdoommap"]
+                    }
+                  },
+                  {
+                    "title": "Dark Academy",
+                    "content": {
+                      "type": "map",
+                      "v_alignment": "center",
+                      "h_alignment": "center",
+                      "maps": ["darkacademymap"]
+                    }
+                  },
+                  {
+                    "title": "Forgotten City",
+                    "content": {
+                      "type": "map",
+                      "v_alignment": "center",
+                      "h_alignment": "center",
+                      "maps": ["forgottencitymap"]
+                    }
+                  },
+                  {
+                    "title": "Burnt Paradise",
+                    "content": {
+                      "type": "map",
+                      "v_alignment": "center",
+                      "h_alignment": "center",
+                      "maps": ["burntparadisemap"]
+                    }
+                  },
+                  {
+                    "title": "13th Street",
+                    "content": {
+                      "type": "map",
+                      "v_alignment": "center",
+                      "h_alignment": "center",
+                      "maps": ["13thstreetmap"]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "tracker_horizontal": {
+    "type": "container",
+    "background": "#2b2b2b",
+    "content": {
+      "type": "dock",
+      "dropshadow": true,
+      "content": [
+        {
+          "type": "dock",
+          "dock": "bottom",
+          "content": [
+            {
+              "type": "group",
+              "header": "Items",
+              "dock": "left",
+              "margin": "0,0,3,0",
+              "content": {
+                "type": "layout",
+                "h_alignment": "center",
+                "v_alignment": "center",
+                "key": "shared_item_grid"
+              }
+            },
+            {
+              "type": "group",
+              "header": "Pinned Locations",
+              "content": {
+                "type": "recentpins",
+                "style": "wrap",
+                "h_alignment": "stretch",
+                "v_alignment": "stretch",
+                "orientation": "horizontal",
+                "compact": true
+              }
+            }
+          ]
+        },
+        {
+          "type": "tabbed",
+          "tabs": [
+            {
+              "title": "Castle Maps",
+              "content": {
+                "type": "tabbed",
+                "tabs": [
+                  {
+                    "title": "Dracula's Castle",
+                    "content": {
+                      "type": "map",
+                      "v_alignment": "center",
+                      "h_alignment": "center",
+                      "maps": ["castlemap"]
+                    }
+                  },
+                  {
+                    "title": "Castle Entrance",
+                    "content": {
+                      "type": "map",
+                      "v_alignment": "center",
+                      "h_alignment": "center",
+                      "maps": ["castleentrancemap"]
+                    }
+                  },
+                  {
+                    "title": "Buried Chamber",
+                    "content": {
+                      "type": "map",
+                      "v_alignment": "center",
+                      "h_alignment": "center",
+                      "maps": ["buriedchambermap"]
+                    }
+                  },
+                  {
+                    "title": "Great Stairway",
+                    "content": {
+                      "type": "map",
+                      "v_alignment": "center",
+                      "h_alignment": "center",
+                      "maps": ["greatstairwaymap"]
+                    }
+                  },
+                  {
+                    "title": "Tower Of Death",
+                    "content": {
+                      "type": "map",
+                      "v_alignment": "center",
+                      "h_alignment": "center",
+                      "maps": ["towerofdeathmap"]
+                    }
+                  },
+                  {
+                    "title": "Master's Keep",
+                    "content": {
+                      "type": "map",
+                      "v_alignment": "center",
+                      "h_alignment": "center",
+                      "maps": ["masterskeepmap"]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "title": "Portrait Maps",
+              "content": {
+                "type": "tabbed",
+                "tabs": [
+                  {
+                    "title": "City of Haze",
+                    "content": {
+                      "type": "map",
+                      "v_alignment": "center",
+                      "h_alignment": "center",
+                      "maps": ["cityofhazemap"]
+                    }
+                  },
+                  {
+                    "title": "Sandy Grave",
+                    "content": {
+                      "type": "map",
+                      "v_alignment": "center",
+                      "h_alignment": "center",
+                      "maps": ["sandygravemap"]
+                    }
+                  },
+                  {
+                    "title": "Nation of Fools",
+                    "content": {
+                      "type": "map",
+                      "v_alignment": "center",
+                      "h_alignment": "center",
+                      "maps": ["nationoffoolsmap"]
+                    }
+                  },
+                  {
+                    "title": "Forest of Doom",
+                    "content": {
+                      "type": "map",
+                      "v_alignment": "center",
+                      "h_alignment": "center",
+                      "maps": ["forestofdoommap"]
+                    }
+                  },
+                  {
+                    "title": "Dark Academy",
+                    "content": {
+                      "type": "map",
+                      "v_alignment": "center",
+                      "h_alignment": "center",
+                      "maps": ["darkacademymap"]
+                    }
+                  },
+                  {
+                    "title": "Forgotten City",
+                    "content": {
+                      "type": "map",
+                      "v_alignment": "center",
+                      "h_alignment": "center",
+                      "maps": ["forgottencitymap"]
+                    }
+                  },
+                  {
+                    "title": "Burnt Paradise",
+                    "content": {
+                      "type": "map",
+                      "v_alignment": "center",
+                      "h_alignment": "center",
+                      "maps": ["burntparadisemap"]
+                    }
+                  },
+                  {
+                    "title": "13th Street",
+                    "content": {
+                      "type": "map",
+                      "v_alignment": "center",
+                      "h_alignment": "center",
+                      "maps": ["13thstreetmap"]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

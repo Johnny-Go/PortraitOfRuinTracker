@@ -1,0 +1,86 @@
+[
+  {
+    "name": "castlemap",
+    "location_size": 40,
+    "location_border_thickness": 5,
+    "img": "images/CastleMap.png"
+  },
+  {
+    "name": "castleentrancemap",
+    "location_size": 40,
+    "location_border_thickness": 5,
+    "img": "images/CastleEntrance.png"
+  },
+  {
+    "name": "buriedchambermap",
+    "location_size": 40,
+    "location_border_thickness": 5,
+    "img": "images/BuriedChamber.png"
+  },
+  {
+    "name": "greatstairwaymap",
+    "location_size": 40,
+    "location_border_thickness": 5,
+    "img": "images/GreatStairway.png"
+  },
+  {
+    "name": "towerofdeathmap",
+    "location_size": 40,
+    "location_border_thickness": 5,
+    "img": "images/TowerOfDeath.png"
+  },
+  {
+    "name": "masterskeepmap",
+    "location_size": 40,
+    "location_border_thickness": 5,
+    "img": "images/MastersKeep&ThroneRoom.png"
+  },
+  {
+    "name": "cityofhazemap",
+    "location_size": 40,
+    "location_border_thickness": 5,
+    "img": "images/CityOfHazeMap.png"
+  },
+  {
+    "name": "sandygravemap",
+    "location_size": 40,
+    "location_border_thickness": 5,
+    "img": "images/SandyGraveMap.png"
+  },
+  {
+    "name": "nationoffoolsmap",
+    "location_size": 40,
+    "location_border_thickness": 5,
+    "img": "images/NationOfFoolsMap.png"
+  },
+  {
+    "name": "forestofdoommap",
+    "location_size": 40,
+    "location_border_thickness": 5,
+    "img": "images/ForestOfDoomMap.png"
+  },
+  {
+    "name": "darkacademymap",
+    "location_size": 40,
+    "location_border_thickness": 5,
+    "img": "images/DarkAcademyMap.png"
+  },
+  {
+    "name": "forgottencitymap",
+    "location_size": 40,
+    "location_border_thickness": 5,
+    "img": "images/ForgottenCityMap.png"
+  },
+  {
+    "name": "burntparadisemap",
+    "location_size": 40,
+    "location_border_thickness": 5,
+    "img": "images/BurntParadiseMap.png"
+  },
+  {
+    "name": "13thstreetmap",
+    "location_size": 40,
+    "location_border_thickness": 5,
+    "img": "images/13thStreetMap.png"
+  }
+]

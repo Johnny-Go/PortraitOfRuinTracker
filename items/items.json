@@ -4,21 +4,21 @@
     "name": "Acrobat Cube",
     "type": "toggle",
     "img": "images/AcrobatCubeCharlotte.png",
-    "codes": "acrobat"
+    "codes": "acrobat, height, jump"
   },
   // Stone of Flight
   {
     "name": "Stone of Flight",
     "type": "toggle",
     "img": "images/StoneOfFlight.png",
-    "codes": "stoneflight"
+    "codes": "stoneflight, height, jump, doublejump"
   },
   // Griffon Wing
   {
     "name": "Griffon Wing",
     "type": "toggle",
     "img": "images/GriffonWing.png",
-    "codes": "griffon"
+    "codes": "griffon, height, jump, doublejump, veryhigh"
   },
   // Change Cube
   {
@@ -46,14 +46,14 @@
     "name": "Toad Morph",
     "type": "toggle",
     "img": "images/ToadMorph.png",
-    "codes": "toad"
+    "codes": "toad, smallbody, verysmall"
   },
   // Owl Morph
   {
     "name": "Owl Morph",
     "type": "toggle",
     "img": "images/OwlMorph.png",
-    "codes": "owl"
+    "codes": "owl, smallbody, verysmall, height, jump, doublejump, veryhigh"
   },
   // Sanctuary
   {
@@ -74,7 +74,7 @@
     "name": "Puppet Master",
     "type": "toggle",
     "img": "images/Puppet.png",
-    "codes": "puppet"
+    "codes": "puppet, height, smallbody"
   },
   // Cog
   {
@@ -145,5 +145,75 @@
     "type": "toggle",
     "img": "images/NestOfEvil.png",
     "codes": "nestofEvil"
+  },
+  // Generic Weapon Placeholder
+  {
+    "name": "Weapon",
+    "type": "toggle",
+    "img": "images/Weapon.png",
+    "codes": "weapon"
+  },
+  // Generic Accessory Placeholder
+  {
+    "name": "Accessory",
+    "type": "toggle",
+    "img": "images/Accessory.png",
+    "codes": "accessory"
+  },
+  // Generic Armor Placeholder
+  {
+    "name": "Armor",
+    "type": "toggle",
+    "img": "images/Armor.png",
+    "codes": "armor"
+  },
+  // Generic Headgear Placeholder
+  {
+    "name": "Headgear",
+    "type": "toggle",
+    "img": "images/Headgear.png",
+    "codes": "headgear"
+  },
+  // Generic Leg Gear Placeholder
+  {
+    "name": "Leg Gear",
+    "type": "toggle",
+    "img": "images/LegGear.png",
+    "codes": "leggear"
+  },
+  // Generic Relic Placeholder
+  {
+    "name": "Relic",
+    "type": "toggle",
+    "img": "images/Relic.png",
+    "codes": "relic"
+  },
+  // Generic Sub Weapon Skill Placeholder
+  {
+    "name": "Sub Weapon Skill",
+    "type": "toggle",
+    "img": "images/SubWeaponSkill.png",
+    "codes": "subweaponskill"
+  },
+  // Generic Spell Skill Placeholder
+  {
+    "name": "Spell Skill",
+    "type": "toggle",
+    "img": "images/SpellSkill.png",
+    "codes": "spellskill"
+  },
+  // Generic Dual Crush Placeholder
+  {
+    "name": "Dual Crush",
+    "type": "toggle",
+    "img": "images/DualCrush.png",
+    "codes": "dualcrush"
+  },
+  // Generic Item Placeholder
+  {
+    "name": "Item",
+    "type": "toggle",
+    "img": "images/Item.png",
+    "codes": "item"
   }
 ]

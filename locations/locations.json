@@ -130,6 +130,32 @@
                   }
                 ]
               },
+              //can see by default requires jump
+              {
+                "name": "Whip Skill 1",
+                "sections": [
+                  {
+                    "name": "Whip Skill 1",
+                    "access_rules": ["{}", "jump", "change, [jump]"],
+                    "item_count": 1,
+                    "capture_item": true
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "castlemap",
+                    "size": 25,
+                    "x": 430,
+                    "y": 691
+                  }
+                ]
+              }
+            ]
+          },
+          //requires change or height
+          {
+            "access_rules": ["change", "height"],
+            "children": [
               {
                 "name": "Wait Cube",
                 "sections": [
@@ -211,26 +237,6 @@
                     "map": "castlemap",
                     "size": 25,
                     "x": 197,
-                    "y": 691
-                  }
-                ]
-              },
-              //can see by default requires jump
-              {
-                "name": "Whip Skill 1",
-                "sections": [
-                  {
-                    "name": "Whip Skill 1",
-                    "access_rules": ["{}", "jump", "change, [jump]"],
-                    "item_count": 1,
-                    "capture_item": true
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "castlemap",
-                    "size": 25,
-                    "x": 430,
                     "y": 691
                   }
                 ]

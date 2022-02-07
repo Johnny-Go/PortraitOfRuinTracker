@@ -273,6 +273,29 @@
                 ]
               },
               {
+                "name": "???",
+                "sections": [
+                  {
+                    "name": "???",
+                    "item_count": 1
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "castlemap",
+                    "size": 25,
+                    "x": 249,
+                    "y": 664
+                  },
+                  {
+                    "map": "castleentrancemap",
+                    "size": 25,
+                    "x": 249,
+                    "y": 118
+                  }
+                ]
+              },
+              {
                 "name": "Head Guard",
                 "sections": [
                   {
@@ -1066,7 +1089,8 @@
                       "change, [doublejump]",
                       "speed, puppet"
                     ],
-                    "item_count": 1
+                    "item_count": 1,
+                    "capture_item": true
                   }
                 ],
                 "map_locations": [
@@ -1302,7 +1326,8 @@
                       "change, [doublejump]",
                       "speed, puppet"
                     ],
-                    "item_count": 1
+                    "item_count": 1,
+                    "capture_item": true
                   }
                 ],
                 "map_locations": [
@@ -1420,7 +1445,7 @@
           }
         ]
       },
-      //Tower of Death fix 2
+      //Tower of Death
       {
         "access_rules": [],
         "children": [
@@ -1554,13 +1579,12 @@
               },
               //cog needed
               {
+                //change is required to complete the motorcycle section
                 "name": "Motorcycle Secret Room",
                 "access_rules": [
-                  "change, cog, [doublejump, puppet]",
-                  "change, cog, [acrobat, doublejump]",
-                  "cog, doublejump, puppet",
-                  "cog, acrobat, doublejump",
-                  "cog, veryhigh"
+                  "change, cog, doublejump, puppet",
+                  "change, cog, acrobat, doublejump",
+                  "change, cog, veryhigh"
                 ],
                 "sections": [
                   {
@@ -1955,7 +1979,67 @@
                     "y": 222
                   }
                 ]
+              }
+            ]
+          },
+          //sanctuary required
+          {
+            "access_rules": ["sanctuary"],
+            "children": [
+              {
+                "name": "Left Two Items",
+                "sections": [
+                  {
+                    "name": "Two Items",
+                    "item_count": 2
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "castlemap",
+                    "size": 25,
+                    "x": 1003,
+                    "y": 119
+                  },
+                  {
+                    "map": "masterskeepmap",
+                    "size": 25,
+                    "x": 66,
+                    "y": 118
+                  }
+                ]
               },
+              {
+                "name": "Right Two Items",
+                "sections": [
+                  {
+                    "name": "Two Items",
+                    "item_count": 2
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "castlemap",
+                    "size": 25,
+                    "x": 1029,
+                    "y": 119
+                  },
+                  {
+                    "map": "masterskeepmap",
+                    "size": 25,
+                    "x": 91,
+                    "y": 118
+                  }
+                ]
+              }
+            ]
+          },
+          //sanctuary, and all four of the Brauner Portraits required
+          {
+            "access_rules": [
+              "sanctuary, forgottencity, 13thstreet, burntparadise, darkacademy"
+            ],
+            "children": [
               {
                 "name": "HP Max Up",
                 "sections": [
@@ -1978,86 +2062,86 @@
                     "y": 92
                   }
                 ]
-              }
-            ]
-          },
-          //visible, veryhigh required
-          {
-            "name": "MP Max Up",
-            "sections": [
+              },
+              //visible, veryhigh required
               {
                 "name": "MP Max Up",
-                "access_rules": [
-                  "{}",
-                  "veryhigh",
-                  "change, doublejump, [veryhigh]"
-                ],
-                "item_count": 1,
-                "capture_item": true
-              }
-            ],
-            "map_locations": [
-              {
-                "map": "castlemap",
-                "size": 25,
-                "x": 1055,
-                "y": 14
-              },
-              {
-                "map": "masterskeepmap",
-                "size": 25,
-                "x": 117,
-                "y": 15
-              }
-            ]
-          },
-          //veryhigh required
-          {
-            "access_rules": ["veryhigh", "change, doublejump, [veryhigh]"],
-            "children": [
-              {
-                "name": "Secret Foie Gras",
                 "sections": [
                   {
-                    "name": "Foie Gras",
-                    "item_count": 1
+                    "name": "MP Max Up",
+                    "access_rules": [
+                      "{}",
+                      "veryhigh",
+                      "change, doublejump, [veryhigh]"
+                    ],
+                    "item_count": 1,
+                    "capture_item": true
                   }
                 ],
                 "map_locations": [
                   {
                     "map": "castlemap",
                     "size": 25,
-                    "x": 1081,
+                    "x": 1055,
                     "y": 14
                   },
                   {
                     "map": "masterskeepmap",
                     "size": 25,
-                    "x": 143,
+                    "x": 117,
                     "y": 15
                   }
                 ]
               },
+              //veryhigh required
               {
-                "name": "Throne Room 'Secret'",
-                "sections": [
+                "access_rules": ["veryhigh", "change, doublejump, [veryhigh]"],
+                "children": [
                   {
-                    "name": "Two Items",
-                    "item_count": 2
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "castlemap",
-                    "size": 25,
-                    "x": 1003,
-                    "y": 14
+                    "name": "Secret Foie Gras",
+                    "sections": [
+                      {
+                        "name": "Foie Gras",
+                        "item_count": 1
+                      }
+                    ],
+                    "map_locations": [
+                      {
+                        "map": "castlemap",
+                        "size": 25,
+                        "x": 1081,
+                        "y": 14
+                      },
+                      {
+                        "map": "masterskeepmap",
+                        "size": 25,
+                        "x": 143,
+                        "y": 15
+                      }
+                    ]
                   },
                   {
-                    "map": "masterskeepmap",
-                    "size": 25,
-                    "x": 66,
-                    "y": 15
+                    "name": "Throne Room 'Secret'",
+                    "sections": [
+                      {
+                        "name": "Two Items",
+                        "item_count": 2
+                      }
+                    ],
+                    "map_locations": [
+                      {
+                        "map": "castlemap",
+                        "size": 25,
+                        "x": 1003,
+                        "y": 14
+                      },
+                      {
+                        "map": "masterskeepmap",
+                        "size": 25,
+                        "x": 66,
+                        "y": 15
+                      }
+                    ]
                   }
                 ]
               }

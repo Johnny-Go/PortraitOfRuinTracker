@@ -1,0 +1,27 @@
+{
+  "tracker_broadcast": {
+    "type": "array",
+    "dropshadow": true,
+    "margin": "10",
+    "content": [
+      {
+        "type": "array",
+        "orientation": "vertical",
+        "content": [
+          {
+            "type": "itemgrid",
+            "h_alignment": "center",
+            "item_margin": "3,3",
+            "item_size": 72,
+            "rows": [
+              ["change", "push", "toad", "cityofhaze", "forgottencity"],
+              ["acrobat", "strength", "puppet", "sandygrave", "13thstreet"],
+              ["stoneflight", "speed", "owl", "nationoffools", "burntparadise"],
+              ["griffon", "sanctuary", "cog", "forestofdoom", "darkacademy"]
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -12,4 +12,4 @@ end
 Tracker:AddLayouts("layouts/items.json")
 Tracker:AddLayouts("layouts/tracker.json")
 
-Tracker:AddLayouts("layouts/standard_broadcast.json")
+Tracker:AddLayouts("layouts/broadcast.json")
